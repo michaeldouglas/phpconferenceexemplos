@@ -1,0 +1,14 @@
+#!/bin/sh
+
+if [ -z "$API_KEY" ] || [ -z "$API_SECRET" ]
+then
+   export API_KEY=44952322
+   export API_SECRET=59a034c2e43db3a751516baef66d1548c8656856
+fi
+
+if [ -d "storage" ]
+then
+  rm -rf storage/
+fi
+
+php -S 0.0.0.0:8080 -t web web/index.php

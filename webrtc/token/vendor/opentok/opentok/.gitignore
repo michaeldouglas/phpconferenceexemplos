@@ -1,0 +1,9 @@
+*.DS_Store
+composer.phar
+composer.lock
+opentok.phar
+vendor/
+phpunit.xml
+sample/*/vendor/
+sample/*/cache/
+composer.lock

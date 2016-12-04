@@ -1,0 +1,30 @@
+{
+    "name": "root/tokens",
+    "require": {
+        "opentok/opentok": "^2.4",
+        "vlucas/phpdotenv": "^2.4",
+        "guzzlehttp/guzzle": "^6.2.2",
+        "aoberoi/json-works": "~1.0",
+        "firebase/php-jwt": "^3.0",
+        "monolog/monolog": "^1.21",
+        "silex/silex": "~2.0",
+        "twig/twig": "^2.0@dev",
+        "doctrine/dbal": "~2.2",
+        "doctrine/orm"  : "*",
+        "doctrine/annotations": "*",
+        "doctrine/common": "2.5.*",
+        "icanboogie/storage": "~1.0",
+        "slim/slim": "2.*"
+    },
+    "autoload": {
+        "psr-4":{
+            "Projeto\\Biblioteca\\": "src/Projeto/Biblioteca"
+        }
+    },
+    "authors": [
+        {
+            "name": "Michael Douglas Barbosa Araujo",
+            "email": "michaeldouglas010790@gmail.com"
+        }
+    ]
+}

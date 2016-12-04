@@ -1,0 +1,13 @@
+language: php
+php:
+- 5.6
+before_script:
+- travis_retry composer self-update
+- travis_retry composer install --prefer-source --no-interaction
+deploy:
+  provider: heroku
+  api_key:
+    secure: NOIFDHjC0jRXgjliTGJrQGjpuw4m+kT8hFeQ663t13OC11XpzWlQyxMlhEKHXNinOgyBtHYycu4clYKcs4BRU9KkYksT//fT74NsEUrQctfm8uLIafVE6hm5wKiZ5jr4b8f1BMos/kc7hJFpLNUEqYf4LPrcekQ0Y88ExvCYeAC1eOYWwfAiNhJ1uP086NBy+pmcAJzLeAZ2m49VzTmggAdxX5RRvk2GqjXsKGNOj4qvVW3LS24iVk43Kd9dGZ8b8ER3drTIF3oL2wY+a9GOBJFnXClARexT9HEXRxjgwcuaCumh6EvT9fIuMvg+g90fkfzABpFGpc8zB9ei73DG+/lRrD0tkCvFeMgb3A6cb7PEm5ZLlgfvQnB1qkf8QSLft8VFfb/mnb8pbxiHIIGte1zx/j506cqi4u/ClRZXJkpm8OFXzEmsNjf/OKNE29rFzT92IEs1xwvkSNMbWJOaOlxoMjvKh1zNZWxq95ExBeI9QAwECBTKQzVqqLTXbO96i0I7e/lNahCkLE9vLS+TI1+3Wi4+vgI8g72nff7QYGnQvMnI3BE5iL8nrAS4meSjJWxZkQYcsRQ5UQu446iorojWtIgYQEqewJrSI9VT1BxKyvlpshJSF0jm/TfE1Af4PdHbNtM0YBC3BH/Cov2A30wjxdSHGTlJDuVNxS+IuAE=
+  app: phpconference
+  skip_cleanup: true
+script: bin/phpunit

@@ -1,0 +1,14 @@
+{
+    "name": "root/tokens",
+    "require": {
+        "opentok/opentok": "^2.4",
+        "icanboogie/storage": "~1.0",
+        "slim/slim": "2.*"
+    },
+    "authors": [
+        {
+            "name": "Michael Douglas Barbosa Araujo",
+            "email": "michaeldouglas010790@gmail.com"
+        }
+    ]
+}

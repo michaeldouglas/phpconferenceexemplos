@@ -1,0 +1,28 @@
+{
+
+  "name": "aoberoi/json-works",
+  "description": "Create, edit, query and validate json",
+  "keywords": ["json", "schema"],
+  "homepage": "http://github.com/aoberoi/json-works",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "John Stevenson",
+      "email": "john-stevenson@blueyonder.co.uk"
+    },
+    {
+      "name": "Ankur Oberoi",
+      "email": "aoberoi@gmail.com"
+    }
+  ],
+
+  "require": {
+    "php": ">=5.3.2"
+  },
+
+  "autoload": {
+    "psr-0": {"JohnStevenson\\JsonWorks": "src/"}
+  }
+
+}

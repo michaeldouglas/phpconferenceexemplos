@@ -1,0 +1,23 @@
+{
+  "name": "phpconferencebrasil",
+  "description": "Instala as vendors staticas do projeto para o PHP Conference Brasil",
+  "main": "index.js",
+  "authors": [
+    "Nome de voces"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/michaeldouglas/Silex-Docker",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/vendor/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "*",
+    "font-awesome": "^4.6.3",
+    "jquery": "*"
+  }
+}
