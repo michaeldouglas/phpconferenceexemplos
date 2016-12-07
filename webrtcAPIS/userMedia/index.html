@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>GetUserMedia - PHPConferenceBrasil 2016</title>
+    <link crossorigin="anonymous" rel="stylesheet" href="midia/app.css" />
+</head>
+<body>
+
+<ul class="options">
+    <li>
+        <a href="javascript:;" onclick="getMedia(true, true)">
+            <i class="fa fa-video-camera"></i> ÁUDIO E VIDEO
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="getMedia(true, false)">
+            <i class="fa fa-microphone"></i> SOMENTE ÁUDIO
+        </a>
+    </li>
+    <li>
+        <a href="javascript:;" onclick="getMedia(false, true)">
+            <i class="fa fa-camera"></i> SOMENTE VIDEO
+        </a>
+    </li>
+</ul>
+
+<div class="content">
+    <h1 class="content__heading">Exemplo GetUserMedia()</h1>
+    <p class="content__teaser">Exemplo de utilização da GetUserMedia: PHPConferenceBrasil 2016</p>
+    <a style="background: none; border: none;" href="http://phpconference.com.br" class="content__cta">
+        <img src="logo.png" />
+    </a>
+</div>
+
+<video id="phpconference-video" class="video" autoplay></video>
+
+<script type="text/javascript" src="midia/app.js"></script>
+
+</body>
+</html>
